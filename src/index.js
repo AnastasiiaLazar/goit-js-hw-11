@@ -67,7 +67,7 @@ async function onLoadMoreBtnClick() {
             Notiflix.Notify.info("We're sorry, but you've reached the end of search results.");
             loadMoreBtnHide();           
         }
-    fetchImages(query, pageEl, per_pageEl).then(data => {
+    await fetchImages(query, pageEl, per_pageEl).then(data => {
         renderCards(data.hits);
         lightbox.refresh();
     });
