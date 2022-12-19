@@ -1,0 +1,71 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  font-size: small;
+  color: #212121;
+  line-height: 1.5;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.search-form{
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #D8BFD8;
+}
+
+.load-more{
+  display: block;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.is-hidden {
+  display: none;
+}
+
+.gallery-link {
+  max-height: 100%;
+  flex-direction: column;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  box-shadow: 0 1px 3px #0003, 0 1px 1px #00000024, 0 2px 1px -1px #0000001f;
+}
+
+.gallery-link:hover {
+  transform: scale(1.01);
+}
+
+.gallery-image {
+  max-height: 100%;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery {
+  max-width: 1140px;
+  grid-gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  list-style: none;
+  display: grid;
+}
+
+.info {
+  text-align: center;
+  flex-grow: 2;
+  justify-content: center;
+  display: flex;
+  color: #212121;
+}
