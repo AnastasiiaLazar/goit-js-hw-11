@@ -56,7 +56,6 @@ async function onSearchBtnSubmit(e) {
             Notiflix.Notify.info("We're sorry, but you've reached the end of search results.");
         }
     });   
-    console.log(pageEl)
 };
 
 async function onLoadMoreBtnClick() {
@@ -71,7 +70,6 @@ async function onLoadMoreBtnClick() {
         renderCards(data.hits);
         lightbox.refresh();
     });
-    console.log(pageEl)
 }
 
 
